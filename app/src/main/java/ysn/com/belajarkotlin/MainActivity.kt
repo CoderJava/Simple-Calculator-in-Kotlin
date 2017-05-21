@@ -40,7 +40,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
     }
 
     private fun initComponent() {
-        editTextValue1ActivityMain = findViewById(R.id.edit_text_value_1_activity_main) as EditText?
+        editTextValue1ActivityMain = findViewById(R.id.edit_text_value_1_activity_main) as EditText
         editTextValue2ActivityMain = findViewById(R.id.edit_text_value_2_activity_main) as EditText
         buttonAdditionActivityMain = findViewById(R.id.button_addition_activity_main) as Button
         buttonSubtrationActivityMain = findViewById(R.id.button_subtraction_activity_main) as Button
