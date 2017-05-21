@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/coordinator_layout_container_activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="ysn.com.belajarkotlin.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar_activity_main"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:background="@color/colorPrimary"
+            android:elevation="4dp"
+            app:theme="@style/ThemeOverlay.AppCompat.Light" />
+
+        <RelativeLayout
+            android:id="@+id/relative_layout_container_activity_main"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="@dimen/activity_vertical_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:paddingBottom="@dimen/activity_vertical_margin"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:layout_below="@+id/toolbar_activity_main"
+            >
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/edit_text_value_1_activity_main"
+                android:hint="Value 1"
+                />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/edit_text_value_2_activity_main"
+                android:hint="Value 2"
+                android:layout_below="@+id/edit_text_value_1_activity_main"
+                android:layout_marginTop="5dp"
+                />
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:id="@+id/linear_layout_container_button_activity_main"
+               android:orientation="horizontal"
+               android:layout_below="@+id/edit_text_value_2_activity_main"
+               android:layout_marginTop="5dp"
+               >
+
+               <Button
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:id="@+id/button_addition_activity_main"
+                   android:text="+"
+                   android:layout_weight="1"
+                   />
+
+               <Button
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:id="@+id/button_subtraction_activity_main"
+                   android:text="-"
+                   android:layout_weight="1"
+                   />
+
+               <Button
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:id="@+id/button_multiplication_activity_main"
+                   android:text="x"
+                   android:layout_weight="1"
+                   />
+
+               <Button
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:id="@+id/button_division_activity_main"
+                   android:text="/"
+                   android:layout_weight="1"
+                   />
+
+           </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/text_view_result_activity_main"
+                android:layout_below="@+id/linear_layout_container_button_activity_main"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:text="Result: "
+                />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</android.support.design.widget.CoordinatorLayout>
